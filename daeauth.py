@@ -11,7 +11,7 @@ from django.views.decorators.cache import never_cache
 from django.views.decorators.csrf import csrf_protect
 
 
-def AdminExternalAuthMixin(object):
+class AdminExternalAuthMixin(object):
     """Mixin for ``AdminSite`` to use project-level authentication views.
 
     The admin site's ``login`` and ``logout`` views are replaced with redirects
